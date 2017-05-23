@@ -88,7 +88,7 @@ dashboard.renderGrid = function () {
     if (typeof $('.grid').data('kendoGrid') !== 'undefined') {
         $('.grid').data('kendoGrid').setDataSource(new kendo.data.DataSource({
             data: data,
-            pageSize: 100
+            pageSize: 5
         }))
         return
     }
@@ -135,7 +135,7 @@ dashboard.renderGrid = function () {
     $('.grid').kendoGrid({
         dataSource: {
             data: data,
-            pageSize: 8
+            pageSize: 5
         },
         pageable: true,
         sortable: true,
