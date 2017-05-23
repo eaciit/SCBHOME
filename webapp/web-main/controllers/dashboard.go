@@ -76,8 +76,6 @@ func (c *DashboardController) SavePage(k *knot.WebContext) interface{} {
 
 		defer file.Close()
 
-		tk.RandomString(32)
-
 		baseImagePath := Config.GetString("uploadpath")
 		fileName := tk.RandomString(32) + filepath.Ext(handler.Filename)
 		filePath := filepath.Join(baseImagePath, fileName)

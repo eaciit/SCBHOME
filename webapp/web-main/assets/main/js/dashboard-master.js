@@ -156,6 +156,9 @@ dashboard.addMaster = function () {
     dashboard.modalTitle("Insert new data")
     ko.mapping.fromJS(dashboard.newPageData(), dashboard.page)
     $('#modal-page').modal('show')
+
+    $('.uploader img').attr('src')
+    $('#photo').replaceWith('<input type="file" name="ProjectPhoto" id="photo" />')
 }
 
 dashboard.editMaster = function () {
@@ -171,6 +174,7 @@ dashboard.editMaster = function () {
     $('#modal-page').modal('show')
 
     $('.uploader img').attr('src', '/web/static/main/images/upload/' + row.Cover)
+    $('#photo').replaceWith('<input type="file" name="ProjectPhoto" id="photo" />')
 }
 
 dashboard.deleteMaster = function(){
