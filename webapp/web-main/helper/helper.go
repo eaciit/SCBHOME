@@ -70,7 +70,10 @@ func ReadConfig() tk.M {
 		}
 
 		sval := strings.Split(string(line), "=")
-		res.Set(sval[0], sval[1])
+		if len(sval) > 1 {
+			res.Set(sval[0], sval[1])
+		}
+		tk.Println("-----|", sval, "|")
 	}
 
 	if !res.Has("dbtimeout") {
