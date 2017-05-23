@@ -208,7 +208,7 @@ func (c *DashboardController) InsertPredefinedData(k *knot.WebContext) interface
 			{Id: "p4", ProjectName: "BEF", Description: DESC, Cover: "andrew-neel-108081.jpg",
 				Platforms: []models.PagePlatform{
 					{PlatformId: "P01", PlatformName: "EACIIT App", URL: "http://scb-bef.eaciitapp.com/dashboard/default", Username: "", Password: ""},
-					{PlatformId: "P02", PlatformName: "", URL: "", Username: "", Password: ""},
+					{PlatformId: "P02", PlatformName: "Exellerator", URL: "", Username: "", Password: ""},
 					{PlatformId: "P03", PlatformName: "UAT", URL: "", Username: "", Password: ""},
 					{PlatformId: "P04", PlatformName: "Development", URL: "", Username: "", Password: ""},
 				}},
